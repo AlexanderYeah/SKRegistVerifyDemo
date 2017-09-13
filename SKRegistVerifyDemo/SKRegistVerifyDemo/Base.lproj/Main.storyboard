@@ -37,20 +37,49 @@
                                     <action selector="verifyPwdBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MwF-2N-fb4"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fhi-8H-rau">
+                                <rect key="frame" x="56" y="158" width="246" height="34"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="eV8-ob-P7N"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="32Q-lR-VVm">
+                                <rect key="frame" x="56" y="212" width="246" height="34"/>
+                                <color key="backgroundColor" red="1" green="0.70488590923537386" blue="0.66672460714204385" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="2.电话号码长度控制">
+                                    <color key="titleColor" red="0.097587603386966593" green="1" blue="0.94122216465455266" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="telVerifyBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9kd-c8-Kya"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Fhi-8H-rau" firstAttribute="top" secondItem="QxE-Ea-G8H" secondAttribute="bottom" constant="21" id="0IG-Rh-Mey"/>
                             <constraint firstItem="QxE-Ea-G8H" firstAttribute="leading" secondItem="d4Q-mX-Hue" secondAttribute="leading" id="1KW-2x-iPh"/>
                             <constraint firstItem="QxE-Ea-G8H" firstAttribute="top" secondItem="d4Q-mX-Hue" secondAttribute="bottom" constant="25" id="CH4-YE-s72"/>
+                            <constraint firstItem="32Q-lR-VVm" firstAttribute="leading" secondItem="Fhi-8H-rau" secondAttribute="leading" id="ETL-Fg-Vz7"/>
                             <constraint firstItem="QxE-Ea-G8H" firstAttribute="width" secondItem="d4Q-mX-Hue" secondAttribute="width" id="FMa-nv-wfP"/>
                             <constraint firstAttribute="trailing" secondItem="d4Q-mX-Hue" secondAttribute="trailing" constant="73" id="MBX-gd-erG"/>
                             <constraint firstItem="d4Q-mX-Hue" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="24" id="Sb7-m2-WsD"/>
+                            <constraint firstItem="Fhi-8H-rau" firstAttribute="leading" secondItem="d4Q-mX-Hue" secondAttribute="leading" id="e3T-tL-pJo"/>
                             <constraint firstItem="d4Q-mX-Hue" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="56" id="e7A-ZS-GGv"/>
+                            <constraint firstItem="32Q-lR-VVm" firstAttribute="height" secondItem="Fhi-8H-rau" secondAttribute="height" id="f1Z-ek-gUT"/>
+                            <constraint firstItem="Fhi-8H-rau" firstAttribute="width" secondItem="d4Q-mX-Hue" secondAttribute="width" id="fBw-iV-KUK"/>
+                            <constraint firstItem="32Q-lR-VVm" firstAttribute="top" secondItem="Fhi-8H-rau" secondAttribute="bottom" constant="20" id="hLf-d9-rnp"/>
                             <constraint firstItem="QxE-Ea-G8H" firstAttribute="height" secondItem="d4Q-mX-Hue" secondAttribute="height" id="ijk-J0-i3C"/>
+                            <constraint firstItem="Fhi-8H-rau" firstAttribute="height" secondItem="d4Q-mX-Hue" secondAttribute="height" id="rtq-wj-1Nz"/>
+                            <constraint firstItem="32Q-lR-VVm" firstAttribute="width" secondItem="Fhi-8H-rau" secondAttribute="width" id="wpp-iB-4Fr"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="pwdBtn" destination="QxE-Ea-G8H" id="rP0-Hr-Z9o"/>
+                        <outlet property="telBtn" destination="32Q-lR-VVm" id="ZuR-un-7un"/>
+                        <outlet property="telNumField" destination="Fhi-8H-rau" id="sex-Hu-TNN"/>
                         <outlet property="verfifyPwdField" destination="d4Q-mX-Hue" id="AsU-ZA-JuR"/>
                     </connections>
                 </viewController>
