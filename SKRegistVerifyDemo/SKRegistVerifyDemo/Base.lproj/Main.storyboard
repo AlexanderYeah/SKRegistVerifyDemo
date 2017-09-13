@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12084"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d4Q-mX-Hue">
+                                <rect key="frame" x="56" y="44" width="246" height="34"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QxE-Ea-G8H">
+                                <rect key="frame" x="56" y="103" width="246" height="34"/>
+                                <color key="backgroundColor" red="0.76719726346107309" green="0.9148051391741987" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="1.注册密码长度验证">
+                                    <color key="titleColor" red="1" green="0.38088938382592208" blue="0.89983719017678343" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="verifyPwdBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MwF-2N-fb4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QxE-Ea-G8H" firstAttribute="leading" secondItem="d4Q-mX-Hue" secondAttribute="leading" id="1KW-2x-iPh"/>
+                            <constraint firstItem="QxE-Ea-G8H" firstAttribute="top" secondItem="d4Q-mX-Hue" secondAttribute="bottom" constant="25" id="CH4-YE-s72"/>
+                            <constraint firstItem="QxE-Ea-G8H" firstAttribute="width" secondItem="d4Q-mX-Hue" secondAttribute="width" id="FMa-nv-wfP"/>
+                            <constraint firstAttribute="trailing" secondItem="d4Q-mX-Hue" secondAttribute="trailing" constant="73" id="MBX-gd-erG"/>
+                            <constraint firstItem="d4Q-mX-Hue" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="24" id="Sb7-m2-WsD"/>
+                            <constraint firstItem="d4Q-mX-Hue" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="56" id="e7A-ZS-GGv"/>
+                            <constraint firstItem="QxE-Ea-G8H" firstAttribute="height" secondItem="d4Q-mX-Hue" secondAttribute="height" id="ijk-J0-i3C"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pwdBtn" destination="QxE-Ea-G8H" id="rP0-Hr-Z9o"/>
+                        <outlet property="verfifyPwdField" destination="d4Q-mX-Hue" id="AsU-ZA-JuR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+</document>
